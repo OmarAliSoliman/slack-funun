@@ -1,0 +1,566 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+input:focus,
+select:focus,
+textarea:focus,
+option:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+body {
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+}
+
+.funun-body {
+  background-color: #F9F9F9;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+#list-msg {
+  height: 100%;
+  width: 350px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -350px;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+}
+#list-msg .card-header {
+  padding: 20px;
+  border-bottom: 0;
+}
+#list-msg .card-header h5 {
+  font-size: 20px;
+  color: #3F0E40;
+}
+#list-msg #accordion {
+  margin-top: 30px;
+}
+#list-msg #accordion .card {
+  margin-top: 10px;
+  border: 0;
+}
+#list-msg #accordion .card .card-header {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #ebe8e8;
+  padding-top: 2px;
+  padding-bottom: 10px;
+}
+#list-msg #accordion .card .card-header .btn-link {
+  text-decoration: none;
+}
+#list-msg #accordion .card .card-header i {
+  color: #3F0E40;
+  margin-left: 10px;
+  font-size: 14px;
+}
+#list-msg #accordion .card .card-header span {
+  color: #000;
+  font-size: 15px;
+}
+#list-msg #accordion .card-chnel-information .card-header i {
+  color: #1D9BD1;
+}
+#list-msg #accordion .card-chnel-information .card-body .card-image img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+#list-msg #accordion .card-chnel-information .card-body .copy-chanel-link {
+  font-size: 12px;
+}
+#list-msg #accordion .card-chnel-information .card-body #chanel-link {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  border: 0;
+}
+#list-msg #accordion .card-users-information .card-header i {
+  color: #38977E;
+}
+#list-msg #accordion .card-users-information .card-body .card {
+  margin-top: 10px;
+}
+#list-msg #accordion .card-users-information .card-body .card .row {
+  margin: 0;
+}
+#list-msg #accordion .card-users-information .card-body .card .col-lg-3 {
+  padding-left: 0;
+}
+#list-msg #accordion .card-users-information .card-body .card .col-lg-9 {
+  padding-right: 0;
+}
+#list-msg #accordion .card-users-information .image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#list-msg #accordion .card-users-information .content h5,
+#list-msg #accordion .card-users-information .content p {
+  margin: 0;
+}
+#list-msg #accordion .card-users-information .content h5 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+#list-msg #accordion .card-users-information .content p {
+  font-size: 12px;
+  margin-top: 6px;
+  color: #999;
+}
+#list-msg #accordion .card-file-information .card-header i {
+  color: #E01E5A;
+}
+#list-msg #accordion .card-file-information .cards-content .card {
+  border: 1px solid #EEE;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+#list-msg #accordion .card-file-information .cards-content .card .row {
+  margin: 0;
+}
+#list-msg #accordion .card-file-information .cards-content .card .row .col-lg-3 {
+  padding-left: 0;
+}
+#list-msg #accordion .card-file-information .cards-content .card .row .col-lg-9 {
+  padding-left: 0;
+}
+#list-msg #accordion .card-file-information .cards-content .card .card-image img {
+  border-radius: 5px;
+}
+#list-msg #accordion .card-file-information .cards-content .card .content h5,
+#list-msg #accordion .card-file-information .cards-content .card .content p {
+  margin: 0;
+}
+#list-msg #accordion .card-file-information .cards-content .card .content h5 {
+  font-size: 14px;
+}
+#list-msg #accordion .card-file-information .cards-content .card .content p {
+  color: #999;
+  font-size: 12px;
+}
+#list-msg #accordion .card-file-information .cards-content .card .file-type-card {
+  border: 1px solid #DDD;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+}
+#list-msg #accordion .card-file-information .cards-content .card .file-type-card .file-type {
+  width: 40px;
+  height: 40px;
+}
+#list-msg #accordion .card-file-information .cards-content .card .file-type-card .image-show {
+  height: 200px;
+  margin-top: 10px;
+}
+#list-msg #accordion .card-pinned-items .card-header i {
+  color: #E8912D;
+}
+#list-msg #accordion .card-pinned-items .card-body .card:first-child {
+  margin-top: 0;
+}
+#list-msg #accordion .card-pinned-items .card-body .card {
+  margin-top: 30px;
+}
+#list-msg #accordion .card-pinned-items .card-body .card h5,
+#list-msg #accordion .card-pinned-items .card-body .card p {
+  margin: 0;
+}
+#list-msg #accordion .card-pinned-items .card-body .card .time {
+  font-size: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+#list-msg #accordion .card-pinned-items .card-body .card .card-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+#list-msg #accordion .card-pinned-items .card-body .card .card-text {
+  font-size: 12px;
+  color: #999;
+}
+#list-msg #accordion .card-pinned-items .card-body .file-type-card {
+  border: 1px solid #DDD;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+}
+#list-msg #accordion .card-pinned-items .card-body .file-type-card .file-type {
+  width: 40px;
+  height: 40px;
+}
+#list-msg #accordion .card-pinned-items .card-body .file-type-card .image-show {
+  height: 200px;
+  margin-top: 10px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 280px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -280px;
+  background-color: #3F0E40;
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+  padding-top: 20px;
+}
+.sidenav .user-name {
+  margin-bottom: 40px;
+  font-size: 15px;
+  color: #C9D1DD;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  margin-right: 10px;
+}
+.sidenav a i {
+  margin-left: 10px;
+  font-size: 14px;
+}
+.sidenav .head {
+  color: #C9D1DD;
+}
+.sidenav .all {
+  color: #C9D1DD;
+}
+.sidenav .specfi-chanel {
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.sidenav .specfi-chanel h5 {
+  color: #C9D1DD;
+}
+.sidenav #accordion .card {
+  background-color: transparent;
+  border: 0;
+  margin-top: 5px;
+}
+.sidenav #accordion .card .card-header {
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid #e9e9e9;
+  border-radius: 0;
+  padding-bottom: 1px;
+  position: relative;
+}
+.sidenav #accordion .card .card-header::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  position: absolute;
+  color: #C9D1DD;
+  font-size: 10px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  border-radius: 50%;
+}
+.sidenav #accordion .card .card-header .btn-link {
+  text-decoration: none;
+  color: #C9D1DD;
+}
+.sidenav #accordion .card .card-body ul li {
+  position: relative;
+}
+.sidenav #accordion .card .card-body ul li a {
+  color: #C9D1DD;
+}
+.sidenav #accordion .card .card-body ul li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  position: absolute;
+  color: #C9D1DD;
+  font-size: 10px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  border-radius: 50%;
+}
+.sidenav .users {
+  margin-top: 20px;
+  color: #C9D1DD;
+}
+.sidenav .users ul li {
+  position: relative;
+}
+.sidenav .users ul li a {
+  color: #C9D1DD;
+}
+.sidenav .users ul li::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #555;
+  top: 50%;
+  transform: translate(0%, -50%);
+  border-radius: 50%;
+}
+.sidenav .users ul .active::before {
+  background-color: green;
+}
+
+#main {
+  transition: all 0.3s ease-in-out;
+}
+
+.top-navbar {
+  background-color: #fff;
+  box-shadow: 0px 0px 8px gray;
+  height: 70px;
+  line-height: 60px;
+}
+.top-navbar .menue img {
+  width: 31px;
+  height: 24px;
+  cursor: pointer;
+}
+.top-navbar .logo {
+  width: 160px;
+  height: 50px;
+}
+.top-navbar .search {
+  padding-top: 12px;
+}
+.top-navbar .search .input-group {
+  border: 1px solid #D2D2D2;
+  border-radius: 10px;
+  padding: 10px;
+  height: 45px;
+}
+.top-navbar .search .btn {
+  border: 0;
+  padding: 0;
+  height: 20px;
+  padding-left: 3px;
+}
+.top-navbar .search .btn img {
+  width: 20px;
+  height: 20px;
+  margin-top: -2px;
+}
+.top-navbar .search .btn:hover {
+  background-color: transparent !important;
+  cursor: auto;
+}
+.top-navbar .search .form-control {
+  border: 0;
+  height: 23px;
+  padding: 0;
+  padding-right: 10px;
+}
+.top-navbar .notification {
+  text-align: center;
+}
+.top-navbar .notification .bell-notification {
+  position: relative;
+}
+.top-navbar .notification .number {
+  position: absolute;
+  top: -10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #E92D2D;
+  color: #fff;
+  line-height: 22px;
+  text-align: center;
+  font-size: 12px;
+}
+.top-navbar .notification i {
+  color: #AEAEAE;
+  margin-right: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.top-navbar .list {
+  text-align: left;
+}
+.top-navbar .list i {
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid #F9F9F9;
+  cursor: pointer;
+}
+
+.tasks-filter {
+  margin-top: 32px;
+}
+.tasks-filter .filter li {
+  margin-top: 13px;
+}
+.tasks-filter .filter .container {
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-right: 30px;
+  font-size: 16px;
+}
+.tasks-filter .filter .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.tasks-filter .filter .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #3F0E40;
+  border-radius: 4px;
+}
+.tasks-filter .filter .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.tasks-filter .filter .container input:checked ~ .checkmark {
+  background-color: #3F0E40;
+}
+.tasks-filter .filter .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.tasks-filter .filter .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.tasks-filter .filter .container .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 8px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.tasks-filter .tasks .card {
+  padding: 16px 26px;
+  border: 0;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 5px;
+}
+.tasks-filter .tasks .card .new-task {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+  color: red;
+}
+.tasks-filter .tasks .card .new-task::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: red;
+  right: -10px;
+  top: 51%;
+  margin-top: 1px;
+  transform: translate(0, -51%);
+}
+.tasks-filter .tasks .card .card-image {
+  width: 50px;
+  height: 50px;
+}
+.tasks-filter .tasks .card .card-body {
+  padding: 0;
+}
+.tasks-filter .tasks .card .card-body .card-ttitle,
+.tasks-filter .tasks .card .card-body .card-text {
+  margin: 0;
+}
+.tasks-filter .tasks .card .card-title {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.tasks-filter .tasks .card .card-text {
+  color: #AEAEAE;
+  font-size: 13px;
+  position: relative;
+  padding-right: 16px;
+}
+.tasks-filter .tasks .card .card-text::before {
+  content: url("../images/share.png");
+  position: absolute;
+  right: 0;
+}
+.tasks-filter .tasks .card .time {
+  margin: 0;
+  font-size: 13px;
+}
+.tasks-filter .tasks .card .time i,
+.tasks-filter .tasks .card .time span {
+  color: #FE9306;
+}
+.tasks-filter .tasks .card .time i {
+  margin-left: 5px;
+}
+.tasks-filter .tasks .card-new-task {
+  background-color: #F3F0F4;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .top-navbar {
+    height: auto;
+  }
+  .top-navbar .notification {
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
