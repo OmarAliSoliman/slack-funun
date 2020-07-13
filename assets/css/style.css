@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai&display=swap");
 input:focus,
 select:focus,
 textarea:focus,
@@ -10,7 +10,7 @@ option:focus {
 
 body {
   direction: rtl;
-  font-family: "Cairo", sans-serif;
+  font-family: "Almarai", sans-serif;
 }
 
 .funun-body {
@@ -333,19 +333,19 @@ img {
 }
 
 .top-navbar {
-  background-color: #fff;
+  background-color: #3E0E40;
   box-shadow: 0px 0px 8px gray;
   height: 70px;
   line-height: 60px;
 }
 .top-navbar .menue img {
-  width: 31px;
-  height: 24px;
+  width: 40px;
+  height: 35px;
   cursor: pointer;
 }
 .top-navbar .logo {
-  width: 160px;
-  height: 50px;
+  width: 140px;
+  height: 30px;
 }
 .top-navbar .search {
   padding-top: 12px;
@@ -376,6 +376,11 @@ img {
   height: 23px;
   padding: 0;
   padding-right: 10px;
+  background-color: transparent;
+  color: #fff;
+}
+.top-navbar .search .form-control::placeholder {
+  color: #fff;
 }
 .top-navbar .notification {
   text-align: center;
@@ -413,6 +418,7 @@ img {
   border-radius: 5px;
   border: 1px solid #F9F9F9;
   cursor: pointer;
+  color: #fff;
 }
 
 .tasks-filter {
@@ -560,6 +566,12 @@ img {
   }
   .top-navbar .notification {
     margin-top: 10px;
+    text-align: right;
+  }
+}
+@media (max-width: 524px) {
+  .top-navbar .search {
+    margin-top: 20px;
   }
 }
 
